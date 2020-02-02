@@ -1,0 +1,112 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #404552;
+}
+.box{
+    width: 40vW;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+    .brand{
+        padding-bottom: 8vh;
+        font-size: 14vh;
+        font-weight: bold;
+    }
+    .blue{
+        color: royalblue;
+    }
+    .red{
+        color: red;
+    }
+    .yellow{
+        color: yellow;
+    }
+    fieldset{
+        position: relative;
+        width: 40vw;
+        height: 8vh;
+        border-radius: 4vh;
+        background-color: seashell;
+    }
+    fieldset input{
+        position: absolute;
+        width: 32vw;
+        height: 6vh;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        outline: none;
+        border: none;
+    }
+    .search{
+        position: absolute;
+        left: 0.8vw;
+        top: calc(4vh - 12px);
+        outline: none;
+         border: none;
+    }
+    .vocal{
+        width: 3vw;
+        height: 6vh;
+        position: absolute;
+        right: 0.8vw;
+        top: calc(4vh - 3vh);
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+
+
+.tab_links li{
+    display: inline-block;
+    width: 20%;
+}
+.tab_links a{
+    width: 100%;
+    display: block;
+    padding: 0.8em 0 0.8em 0;
+    color: #d3dae3;
+    text-decoration: none;
+    position: relative;
+    margin: 0.5em 0 0.5em 0; 
+}
+.tab_links a:hover{
+    background-color: rgba(60, 60, 110, 0.5);
+}
+.tab_links a:hover::before{
+    display: block;
+    transition-delay: 5s;
+    transition: 0.1s;
+    opacity: 1;
+}
+.tab_links a::before{
+    content: '...';
+    transform: rotate(90deg);
+    display: block;
+    position: absolute;
+    right: 0.5em;
+    /*display: none;*/
+    opacity: 0;
+}
+.tab_links small{
+    display: block;
+}
+.tab_links img{
+    width: 32px;
+    background-color: #242936;
+    padding: 16px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
